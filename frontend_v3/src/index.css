@@ -1,0 +1,123 @@
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  /* --primary: #43AA13;
+  --secondary: #34AD54; */
+  --light: #FCFAF2;
+  --dark: #153123;
+  --dark_c: #44B486;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: lemon;
+  src: url(../public/lemon_milk/LEMONMILK-Medium.otf);
+}
+
+.lemon{
+  font-family: lemon;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the track */
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #8B94A6; /* Color of the thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Customize the scrollbar track on hover */
+::-webkit-scrollbar-track:hover {
+  background: #ccc; /* Background color on hover */
+  /* color: ; */
+}
+
+/* Customize the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Thumb color on hover */
+}
+
+/* Define the scrollbar width */
+::-webkit-scrollbar {
+  width: 6px; /* Adjust to change the scrollbar width */
+}
+
+
+/* For Firefox */
+/* Customize the scrollbar thumb */
+scrollbar-thumb {
+  background: #888; /* Color of the thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+
+
+/* Customize the scrollbar thumb on hover */
+scrollbar-thumb:hover {
+  background: #555; /* Thumb color on hover */
+  /* color: ; */
+}
+
+
+.int{
+  font-family: 'Inter', sans-serif;
+}
+
+
+/*** Service ***/
+.service-item {
+  position: relative;
+  height: 300px;
+  padding: 0 30px;
+  transition: .5s;
+}
+
+.service-item .service-icon {
+  margin-bottom: 30px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark_c);
+  border-radius: 2px;
+  transform: rotate(-45deg);
+}
+
+.service-item .service-icon i {
+  transform: rotate(45deg);
+}
+
+.service-item a.btn {
+  position: absolute;
+  width: 60px;
+  bottom: -48px;
+  left: 50%;
+  margin-left: -30px;
+  opacity: 0;
+}
+
+.service-item:hover a.btn {
+  bottom: -24px;
+  opacity: 1;
+}
